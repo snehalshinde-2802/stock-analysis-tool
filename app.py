@@ -618,7 +618,8 @@ def get_stock_news_and_sentiment(ticker):
         if not newsapi_key:
             return [], "Neutral"
         
-        newsapi = NewsApiClient(api_key=newsapi_key)
+        newsapi = NewsApiClient(api_key="5d26082d96ea4d8d8cb545fe6bbdf6e1")
+
         
         # Get company name from ticker for better search
         stock = yf.Ticker(ticker)
