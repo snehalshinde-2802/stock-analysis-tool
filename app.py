@@ -133,7 +133,7 @@ def search_stocks_alphavantage(query):
         return []
     
     try:
-        api_key = os.getenv('ALPHA_VANTAGE_API_KEY')
+        api_key = "Z2FC2BEC2ILA7130"
         if not api_key:
             st.error("Alpha Vantage API key not found")
             return []
