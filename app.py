@@ -1566,14 +1566,14 @@ def main():
     st.sidebar.markdown(f"**Analyzing: {ticker}**")
     
     # your analysis logic here
-    st.write("Analysis results go here...")
-    st.line_chart(...)
+    #st.write("Analysis results go here...")
+   # st.line_chart(...)
 
     # Scroll to the analysis results automatically
-    st.write(
-        "<script>window.scrollTo(0, document.body.scrollHeight);</script>",
-        unsafe_allow_html=True
-    )
+   # st.write(
+      #  "<script>window.scrollTo(0, document.body.scrollHeight);</script>",
+       # unsafe_allow_html=True
+   # )
 
         
         # Add loading spinner
