@@ -17,6 +17,8 @@ from fpdf import FPDF
 import io
 import base64
 
+
+
 # Configure Streamlit page
 st.set_page_config(
     page_title="Stock Dashboard",
@@ -1560,8 +1562,19 @@ def main():
     if selected_from_search:
         st.session_state.selected_from_search = None
     
-    if ticker:
-        st.sidebar.markdown(f"**Analyzing: {ticker}**")
+   if ticker:
+    st.sidebar.markdown(f"**Analyzing: {ticker}**")
+    
+    # your analysis logic here
+    st.write("Analysis results go here...")
+    st.line_chart(...)
+
+    # Scroll to the analysis results automatically
+    st.write(
+        "<script>window.scrollTo(0, document.body.scrollHeight);</script>",
+        unsafe_allow_html=True
+    )
+
         
         # Add loading spinner
         with st.spinner(f'Fetching data for {ticker}...'):
